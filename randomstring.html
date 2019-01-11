@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random String</title>
+</head>
+<body>
+    <script>
+        var alphabet = "abcdefghigklmnopqrstuvwxyz1234567890"; //charsets for string
+
+        var randomstring = ''
+
+        while (randomstring.length < 11/* << how many letters in string */){
+            
+            var d = Math.floor(Math.random() * alphabet.length); //generating random letter
+            randomstring += alphabet[d];
+        }
+        alert (randomstring);
+    </script>
+</body>
+</html>
